@@ -41,4 +41,6 @@ public abstract class GenericDAO<T> {
     public List<T> findAll(String query, Class<T> clazz) {
         return em.createQuery(query, clazz).getResultList();
     }
+
+
 }
